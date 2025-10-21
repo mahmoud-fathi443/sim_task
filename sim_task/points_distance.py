@@ -13,7 +13,7 @@ class PointsDistance(Node):
         self.point1 = PointStamped()
         self.point2 = PointStamped()
 
-        self.timer_ = self.create_timer(1, self.timer_callback)
+        self.timer_ = self.create_timer(1.1, self.timer_callback)
 
     def point1_callback(self, msg):
         self.point1 = msg
